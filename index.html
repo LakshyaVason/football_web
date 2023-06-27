@@ -8,37 +8,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <section class="header">
         <nav>
             <!-- <a href="index.html"><img src="./images/pngtree-letter-j-logo-png-png-image_3310077.jpg" width="5%" height="5%"></a> -->
             <label class="logo"> GoalMasters </label>
-            <div class="nav-links">
+            <!-- <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#event">Events</a></li>
                     <li><a href="gallery">Gallery</a></li>
                     <li><a href="#footer">Contact Us</a></li>
-                </ul>
+                </ul> -->
 
+            <!-- </div> -->
+            <div class="topnav" id="myTopnav">
+              <a href="#home" class="active">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
             </div>
-        
         </nav>
         
     </section>
     
 
-<section class="main">
-    <!-- <div class="text-box">
-      <h1 class="skew">Join for Beginners Football</h1>
-      <br><br>
-      <p class="main-info">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima illo recusandae, <br>error alias maxime suscipit dicta quae ipsam doloribus mollitia voluptatem natus culpa! Libero accusamus quod, <br> sunt autem eaque pariatur nesciunt, fugit quos, totam ad quaerat necessitatibus architecto?
-      </p>
-  </div> -->
-</section>
+    <section class="main">
+      <!-- <div class="text-box">
+        <h1 class="skew">Join for Beginners Football</h1>
+        <br><br>
+        <p class="main-info">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima illo recusandae, <br>error alias maxime suscipit dicta quae ipsam doloribus mollitia voluptatem natus culpa! Libero accusamus quod, <br> sunt autem eaque pariatur nesciunt, fugit quos, totam ad quaerat necessitatibus architecto?
+        </p>
+    </div> -->
+  
+    <div class="blockquote-wrapper">
+      <div class="blockquote">
+        <h1>
+          Start before you are ready
+         </h1>
+      </div>
+    </div>
+  </section> 
     <section class="About" id="About">
         <h1> About Us</h1><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea non dolore tempora itaque dignissimos soluta minus, neque praesentium placeat perferendis doloremque illum nemo. Quaerat, neque!</p>
@@ -235,7 +253,6 @@
       </div>
   </section>
 
-    <br><br><br><br><br><br>
     <section class="coaches"><br>
         <h1>Our Coaches</h1>
         <br>
@@ -355,10 +372,12 @@
             <div class="content">
               <a class="hero-btn" href="">Book a Meeting</a>
                 <div class="social">
-                <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
-                <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+                <a href="https://facebook.com/coding.np">
+                </a>
+                <a href="#">
+                </a>
+                <a href="https://youtube.com/c/codingnepal">
+                </a>
               </div>
             </div>
           </div>
@@ -366,15 +385,12 @@
             <h2>Address</h2>
             <div class="content">
               <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
                 <span class="text">Birendranagar, Surkhet</span>
               </div>
               <div class="phone">
-                <span class="fas fa-phone-alt"></span>
                 <span class="text">+089-765432100</span>
               </div>
               <div class="email">
-                <span class="fas fa-envelope"></span>
                 <span class="text">abc@example.com</span>
               </div>
             </div>
@@ -438,6 +454,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 
 </script>
 </body>
